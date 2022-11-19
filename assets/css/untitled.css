@@ -1,0 +1,13 @@
+p {
+  margin-top: 25px;
+  font-family: 'Gelion Light';
+}
+
+#email-1-cstm::placeholder {
+  color: white;
+}
+
+#email-1.form-control::placeholder {
+  color: white;
+}
+

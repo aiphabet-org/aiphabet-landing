@@ -217,6 +217,27 @@
             </div>
         </div>
     </footer>
+    
+    <script type="text/javascript">
+
+        var doRelocation = function() {
+
+            var currentWidth = window.innerWidth,
+                breakpoint = 600,
+                newLocation = 'mobile_index.html';
+
+            if (currentWidth < breakpoint) {
+                window.location.replace(newLocation);
+            }
+
+        }
+
+        doRelocation();
+
+        window.addEventListener('resize', doRelocation);
+
+    </script>
+    
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bold-and-bright.js"></script>
 </body>

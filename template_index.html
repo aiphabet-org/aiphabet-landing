@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% extends "layout.html" %} 
+{% block content %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -22,34 +23,6 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav" style="opacity: 0.80;">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><img src="assets/img/Copy%20of%20aiphabetlogosmaller.png" style="width: 150px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#ai-mission" style="font-family: 'Gelion Regular'; font-size: 20px;">
-                            <span style="font-weight: normal !important; color: rgba(0, 0, 0, 0.9);">Our Mission</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="team.html" style="font-family: 'Gelion Regular'; font-size: 20px;">
-                            <span style="font-weight: normal !important; color: rgba(0, 0, 0, 0.9);">Team</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#ai-contact" style="font-family: 'Gelion Regular'; font-size: 20px;">
-                            <span style="font-weight: normal !important; color: rgba(0, 0, 0, 0.9);">Contact Us</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.paypal.com/donate?hosted_button_id=UKJ9Z7LT88B5J" style="font-family: 'Gelion Regular'; font-size: 20px;">
-                            <span style="font-weight: normal !important; color: rgba(0, 0, 0, 0.9);">Donate</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <header class="bg-primary-gradient" style="padding: -49px;padding-bottom: 31px;background: #4e5dc2;margin-top: 0px;margin-right: 0px;margin-left: 0px;">
         <div class="container" style="padding-top: 0px;">
             <div class="row pt-5" style="padding-top: 11px;">
@@ -214,16 +187,7 @@
             </div>
         </div>
     </header>
-    <footer id="ai-contact" class="bg-primary-gradient" style="background: var(--ref-gray-100);">
-        <div class="container py-4 py-lg-5">
-            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
-                <div><img src="assets/img/Copy%20of%20aiphabetlogosmaller.png" style="width: 150px;"><span style="font-size: 35px;">™</span></div>
-                <p class="mb-0">Copyright Ⓒ 2023 Aiphabet</p>
-                <p class="mb-0">contact@aiphabet.org</p>
-            </div>
-        </div>
-    </footer>
-    
+    {% endblock %}
     <script type="text/javascript">
 
         var doRelocation = function() {
